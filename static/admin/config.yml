@@ -2,6 +2,7 @@ backend:
   name: github
   repo: apodacaa/vtjub
   branch: main # Branch to update (optional; defaults to master)
+  open_authoring: true
 
 media_folder: static/img
 public_folder: /img
@@ -22,3 +23,5 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+publish_mode: editorial_workflow
